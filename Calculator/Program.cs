@@ -6,8 +6,9 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            int num1 = 0;
-            int num2 = 0;
+            //doubles allow for decimals. can contain 15 digits i think. int is only used for whole numbers
+            double num1 = 0;
+            double num2 = 0;
 
             // Display title as the C# console calculator app.
             Console.WriteLine("Console Calculator in C#\r");
@@ -15,12 +16,12 @@ namespace Calculator
 
             // Ask the user to type the first number.
             Console.WriteLine("Type a number, and then press Enter");
-            //ToInt32 converts the string to an 32 bit integer 
-            num1 = Convert.ToInt32(Console.ReadLine());
+            //Convert.ToDouble converts the string to an 64 bit number. allows for decimals to be entered
+            num1 = Convert.ToDouble(Console.ReadLine());
 
             // Ask the user to type the second number.
             Console.WriteLine("Type another number, and then press Enter");
-            num2 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToDouble(Console.ReadLine());
 
             // Ask the user to choose an option.
             Console.WriteLine("Choose an option from the following list:");
